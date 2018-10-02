@@ -37,7 +37,7 @@ public:
 	ofColor c1toc2;
 	ofColor c2toc0;
 
-	//array of colours to "split" blending across three groups of objects (the amount of objects in each group
+	//array of colours to blend across, in our case, three groups of objects (the amount of objects in each group
 	//is determined by the nobjects/ncolors
 	
 	ofColor	  c[nmaincolors];
@@ -45,7 +45,7 @@ public:
 	int groupNobjects;
 
 
-	//used to indicate  the object the colour  is being assigned to, used to assign
+	//used to indicate  the object index in the array and hence the colour is being assigned to
 	int counter;
 
 	float colorintime;
@@ -54,7 +54,7 @@ public:
 
 	int timeconstant;
 
-	//number used to restart the timer, assigned to the value of ofElapsedTimef()
+	//number used to restart the timer, assigned to the value of ofGetElapsedTimef() every time the cycle ends
 	int colortimer;
 
 	
